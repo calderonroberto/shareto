@@ -1,6 +1,5 @@
-<h1>Editing loan</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @loan %> |
-<%= link_to 'Back', loans_path %>
+<%- model_class = Loan -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Loan %></h1>
+</div>
+<%= render :partial => 'form' %>
