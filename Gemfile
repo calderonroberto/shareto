@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -53,6 +54,9 @@ gem 'binding_of_caller'
 gem 'delayed_job_active_record'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
+gem 'figaro'
+gem 'paperclip'
+gem 'paperclip-dropbox', '>= 1.1.7' 
 
 group :development, :test do
   gem 'rspec-rails'

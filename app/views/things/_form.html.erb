@@ -2,6 +2,8 @@
 
   <div class="form-group">
     <div class='col-md-offset-2 col-md-10'>
+      <%= f.file_field :image %>
+
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                   things_path, :class => 'btn btn-default' %>

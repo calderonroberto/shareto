@@ -8,6 +8,10 @@
   </dl>
 </div>
 
+<%= image_tag @thing.image.url %>
+<%= image_tag @thing.image.url(:medium) %>
+<%= image_tag @thing.image.url(:thumb) %>
+
 <div class="form-group">
   <%= link_to t('.back', :default => t("helpers.links.back")),
               things_path, :class => 'btn btn-default'  %>
