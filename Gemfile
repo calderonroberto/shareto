@@ -57,6 +57,7 @@ gem 'validates_formatting_of'
 gem 'figaro'
 gem 'paperclip'
 gem 'paperclip-dropbox', '>= 1.1.7' 
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'rspec-rails'
