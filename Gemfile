@@ -57,7 +57,14 @@ gem 'validates_formatting_of'
 gem 'figaro'
 gem 'paperclip'
 gem 'paperclip-dropbox', '>= 1.1.7' 
-gem 'aws-sdk', '< 2.0'
+
+# Version 2 is not back compatible, resulting in an error. 
+gem 'aws-sdk', '< 2.0' 
+
+#lets use unicorn for heroku
+# https://devcenter.heroku.com/articles/rails-unicorn
+gem 'unicorn'
+gem 'rack-timeout'
 
 group :development, :test do
   gem 'rspec-rails'
