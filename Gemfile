@@ -66,6 +66,9 @@ gem 'aws-sdk', '< 2.0'
 gem 'unicorn'
 gem 'rack-timeout'
 
+#For heroku.
+gem 'rails_12factor'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
